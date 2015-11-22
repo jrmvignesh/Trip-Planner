@@ -402,8 +402,11 @@ func putLoc(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 		fmt.Fprintf(w, "%s", uj)
 
 	} else if PutRequestIndex >= len(V.Bestlocation_ids) {
-		fmt.Println("You have reached the destination")
+		Msg:= "You have reached the destination"
 		PutRequestIndex = 0
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(200)
+		fmt.Fprintf(w, "%s", Msg)
 	}
 }
 
