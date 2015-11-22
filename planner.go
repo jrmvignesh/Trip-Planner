@@ -418,7 +418,7 @@ func main() {
 
 	mux.POST("/trips", createLoc)
 
-	mux.PUT("/trips/:id", putLoc)
+	mux.PUT("/trips/:id/request", putLoc)
 
 	server := http.Server{
 		Addr:    "0.0.0.0:8080",
