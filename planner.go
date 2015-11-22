@@ -155,7 +155,7 @@ func createLoc(rw http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 			}
 
 			UrlParams = UrlParams + "&end_latitude=" + strconv.FormatFloat(V_temp.Coordinate.Lat, 'f', -1, 64) + "&end_longitude=" + strconv.FormatFloat(V_temp.Coordinate.Lng, 'f', -1, 64)
-			UrlParams = UrlParams + "&access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZXMiOlsiaGlzdG9yeV9saXRlIiwiaGlzdG9yeSJdLCJzdWIiOiJlYzQ0ZjAxMS0wNjYyLTRjYzktOTMxOS02OTQzYmIwZTYzZGIiLCJpc3MiOiJ1YmVyLXVzMSIsImp0aSI6IjEyMDA2OTRiLTI2ZmMtNGJiNS04ZTQwLWZlYzE3ZjBiYjFkNCIsImV4cCI6MTQ1MDczMTc2MSwiaWF0IjoxNDQ4MTM5NzYwLCJ1YWN0IjoidlRjbDhSVko1Q2ROTjcya1RBTUlHNFBlWWdFeHhmIiwibmJmIjoxNDQ4MTM5NjcwLCJhdWQiOiJSOGN2UldMSTlVLVdxdFRvZ09iYnRUejFlM05raGw1WCJ9.MWjwdjJ15AMAgbZTIHq3gREbzYN2idpOtZdw9OQjLcZlzAFZg5aDaAJHflYMu2561SM_ZKO1B7M3YHe_7VFCLUhj2ke0ZQ-DK36yr6UeczqDlQadibh8Y99Pre4yeX85Uv_OZwEV2fO2Qq_yCgGBi0AsJjLletWtQji0Yq2H2-BFGOfhtBgAwnM3Yz9EWiDnKgLJDC2t3rqqKCI91pto2ECKfw6Cxs9hS4e6PiL3spEZafc0YExyKgx4DZSQYJuq8oNtoZz83tHIrsuhntYC4EW1gfPeDppM04EIEw8nLupJQc4YZoY5VYoJl7ATOY45oxH_DrYGhK6rkpPsYVdm_g"
+			UrlParams = UrlParams + "&access_token=<NOT DISCLOSED FOR SECURITY REASON.>"
 
 			Url := "https://sandbox-api.uber.com/v1/estimates/price?" + UrlParams
 
@@ -358,7 +358,7 @@ func putLoc(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 		Url = Url + strconv.FormatFloat(M.Coordinate.Lat, 'f', -1, 64)
 		Url = Url + "&start_longitude="
 		Url = Url + strconv.FormatFloat(M.Coordinate.Lng, 'f', -1, 64)
-		Url = Url + "&access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZXMiOlsiaGlzdG9yeV9saXRlIiwiaGlzdG9yeSJdLCJzdWIiOiJlYzQ0ZjAxMS0wNjYyLTRjYzktOTMxOS02OTQzYmIwZTYzZGIiLCJpc3MiOiJ1YmVyLXVzMSIsImp0aSI6IjEyMDA2OTRiLTI2ZmMtNGJiNS04ZTQwLWZlYzE3ZjBiYjFkNCIsImV4cCI6MTQ1MDczMTc2MSwiaWF0IjoxNDQ4MTM5NzYwLCJ1YWN0IjoidlRjbDhSVko1Q2ROTjcya1RBTUlHNFBlWWdFeHhmIiwibmJmIjoxNDQ4MTM5NjcwLCJhdWQiOiJSOGN2UldMSTlVLVdxdFRvZ09iYnRUejFlM05raGw1WCJ9.MWjwdjJ15AMAgbZTIHq3gREbzYN2idpOtZdw9OQjLcZlzAFZg5aDaAJHflYMu2561SM_ZKO1B7M3YHe_7VFCLUhj2ke0ZQ-DK36yr6UeczqDlQadibh8Y99Pre4yeX85Uv_OZwEV2fO2Qq_yCgGBi0AsJjLletWtQji0Yq2H2-BFGOfhtBgAwnM3Yz9EWiDnKgLJDC2t3rqqKCI91pto2ECKfw6Cxs9hS4e6PiL3spEZafc0YExyKgx4DZSQYJuq8oNtoZz83tHIrsuhntYC4EW1gfPeDppM04EIEw8nLupJQc4YZoY5VYoJl7ATOY45oxH_DrYGhK6rkpPsYVdm_g"
+		Url = Url + "&access_token=<NOT DISCLOSED FOR SECURITY REASON.>"
 
 		fmt.Println(Url)
 		res, _ := http.Get(Url)
